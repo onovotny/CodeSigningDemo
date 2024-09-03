@@ -41,13 +41,13 @@ jobs:
       
     steps:    
     - name: Download signing config
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4.1.7
       with:
         name: config
         path: config
         
     - name: Download build artifacts
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4.1.7
       with:
         name: BuildArtifacts
         path: BuildArtifacts
